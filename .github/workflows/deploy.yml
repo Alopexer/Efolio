@@ -1,4 +1,4 @@
-nname: Deploy to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -27,8 +27,8 @@ jobs:
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
-        branch: gh-pages  # 自动创建 gh-pages 分支
-        folder: dist       # 部署的文件夹
+        branch: gh-pages
+        folder: dist
 
 permissions:
   contents: write

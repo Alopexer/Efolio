@@ -15,74 +15,134 @@ import CountBookAPI from '../views/CountBookAPI.vue';
 
 
 
-const routes = [
-  {
-    path: '/CountBookAPI',
-    name: 'CountBookAPI',
-    component: CountBookAPI,
-  },
-  {
-    path: '/WeatherCheck',
-    name: 'WeatherCheck',
-    component: WeatherView,
-  },
-  {
-    path: '/GetBookCount',
-    name: 'GetBookCount',
-    component: GetBookCountView
-  },
-  {
-    path: '/FireLogin', 
-    name: 'FireLogin',
-    component: FirebaseSigninView
-  },
-  {
-    path: '/FireRegister', 
-    name: 'FireRegister',
-    component: FirebaseRegisterView
-  },
-  {
-    path: '/',
-    name: 'Home',
-    component: HomeView
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: AboutView,
-    meta: { requiresAuth: true }
-  },
-  {
-    path: '/login',
-    name: 'Login',
-    component: LoginView
-  },
-  {
-    path: '/access-denied',
-    name: 'AccessDenied',
-    component: AccessDeniedView
-  },
-  {
-    path: '/booklist',
-    name: '/booklist',
-    component: BookListView
-  },
-  {
-    path: '/addbook',
-    name: '/AddBook',
-    component: AddBookView
-  },
-  {
-    path: '/editbook/:bookid',
-    name: '/EditBook',
-    component: EditBookView
-  }
-];
+// const routes = [
+//   {
+//     path: '/CountBookAPI',
+//     name: 'CountBookAPI',
+//     component: CountBookAPI,
+//   },
+//   {
+//     path: '/WeatherCheck',
+//     name: 'WeatherCheck',
+//     component: WeatherView,
+//   },
+//   {
+//     path: '/GetBookCount',
+//     name: 'GetBookCount',
+//     component: GetBookCountView
+//   },
+//   {
+//     path: '/FireLogin', 
+//     name: 'FireLogin',
+//     component: FirebaseSigninView
+//   },
+//   {
+//     path: '/FireRegister', 
+//     name: 'FireRegister',
+//     component: FirebaseRegisterView
+//   },
+//   {
+//     path: '/',
+//     name: 'Home',
+//     component: HomeView
+//   },
+//   {
+//     path: '/about',
+//     name: 'About',
+//     component: AboutView,
+//     meta: { requiresAuth: true }
+//   },
+//   {
+//     path: '/login',
+//     name: 'Login',
+//     component: LoginView
+//   },
+//   {
+//     path: '/access-denied',
+//     name: 'AccessDenied',
+//     component: AccessDeniedView
+//   },
+//   {
+//     path: '/booklist',
+//     name: '/booklist',
+//     component: BookListView
+//   },
+//   {
+//     path: '/addbook',
+//     name: '/AddBook',
+//     component: AddBookView
+//   },
+//   {
+//     path: '/editbook/:bookid',
+//     name: '/EditBook',
+//     component: EditBookView
+//   }
+// ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes: [
-    // your routes here
+    {
+      path: '/CountBookAPI',
+      name: 'CountBookAPI',
+      component: CountBookAPI,
+    },
+    {
+      path: '/WeatherCheck',
+      name: 'WeatherCheck',
+      component: WeatherView,
+    },
+    {
+      path: '/GetBookCount',
+      name: 'GetBookCount',
+      component: GetBookCountView
+    },
+    {
+      path: '/FireLogin', 
+      name: 'FireLogin',
+      component: FirebaseSigninView
+    },
+    {
+      path: '/FireRegister', 
+      name: 'FireRegister',
+      component: FirebaseRegisterView
+    },
+    {
+      path: '/',
+      name: 'Home',
+      component: HomeView
+    },
+    {
+      path: '/about',
+      name: 'About',
+      component: AboutView,
+      meta: { requiresAuth: true }
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: LoginView
+    },
+    {
+      path: '/access-denied',
+      name: 'AccessDenied',
+      component: AccessDeniedView
+    },
+    {
+      path: '/booklist',
+      name: '/booklist',
+      component: BookListView
+    },
+    {
+      path: '/addbook',
+      name: '/AddBook',
+      component: AddBookView
+    },
+    {
+      path: '/editbook/:bookid',
+      name: '/EditBook',
+      component: EditBookView
+    }
   ]
 });
 
